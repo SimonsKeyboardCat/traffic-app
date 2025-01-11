@@ -1,0 +1,42 @@
+<section class="home">
+  <h1>Wybierz formę transportu</h1>
+  <div class="home__wrapper">
+    <div>
+      <div class="home__card">
+        <h2 class="home__title">Samochód</h2>
+        <h3 class="home__description">
+          Samochód zapewnia niezależność i wygodę podróżowania. Dzięki niemu
+          możemy poruszać się szybko i sprawnie, docierając do dowolnego miejsca
+          o dowolnej porze. To również praktyczne rozwiązanie dla rodzin z
+          dziećmi czy osób, które transportują duże przedmioty.
+        </h3>
+      </div>
+
+      <img class="home__image" src="../../assets/images/car.png" alt="Car" />
+    </div>
+    <div>
+      <div class="home__card">
+        <h2 class="home__title">Komunikacja</h2>
+        <h3 class="home__description">
+          Komunikacja miejska to wygodny i ekologiczny sposób poruszania się po
+          mieście. Dzięki niej unikniesz korków, poszukiwania parkingu i
+          związanych z tym stresów. Regularne korzystanie z transportu
+          publicznego jest również korzystne dla portfela i środowiska.
+        </h3>
+      </div>
+
+      <img
+        class="home__image"
+        src="../../assets/images/bus.png"
+        alt="Public transport"
+      />
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="button button__navbar" (click)="goCar()">Samochód</button>
+    <button class="button button__navbar" (click)="goPublicTransport()">
+      Komunikacja
+    </button>
+  </div>
+</section>

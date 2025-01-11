@@ -1,0 +1,57 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__title {
+    padding-top: 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__card {
+    margin: 10px;
+    height: fit-content;
+    border-radius: 30px;
+    background: #353f54;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  &__description {
+    padding: 20px;
+    height: 180px;
+  }
+
+  &__image {
+    width: 50vw;
+  }
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

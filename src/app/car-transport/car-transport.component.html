@@ -1,0 +1,32 @@
+<section class="car-transport">
+  <h1>Czego potrzebujesz?</h1>
+
+  <div class="car-transport__wrapper">
+    <div class="car-transport__card" (click)="goEasyParking()">
+      <img src="../../assets/images/tab.png" alt="" />
+      <img
+        class="car-transport__icon"
+        src="../../assets/icons/easy-parking.png"
+        alt="Easy parking"
+      />
+      <div class="car-transport__title">Easy parking</div>
+    </div>
+
+    <div class="car-transport__card" (click)="goCarSharing()">
+      <img src="../../assets/images/tab.png" alt="" />
+      <img
+        class="car-transport__icon"
+        src="../../assets/icons/car-sharing.png"
+        alt="Car sharing"
+      />
+      <div class="car-transport__title">Car sharing</div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="button button__navbar" (click)="goDescription()">
+      Opis
+    </button>
+    <button class="button button__navbar" (click)="goBack()">Powrót</button>
+  </div>
+</section>

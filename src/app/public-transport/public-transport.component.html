@@ -1,0 +1,32 @@
+<section class="public-transport">
+  <h1>Czego potrzebujesz?</h1>
+
+  <div class="public-transport__wrapper">
+    <div class="public-transport__card" (click)="goTrains()">
+      <img src="../../assets/images/tab.png" alt="" />
+      <img
+        class="public-transport__icon"
+        src="../../assets/icons/train.png"
+        alt="Trains"
+      />
+      <div class="public-transport__title">Pociągi</div>
+    </div>
+
+    <div class="public-transport__card" (click)="goTransit()">
+      <img src="../../assets/images/tab.png" alt="" />
+      <img
+        class="public-transport__icon"
+        src="../../assets/icons/transit.png"
+        alt="Transit"
+      />
+      <div class="public-transport__title">Komunikacja miejska</div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="button button__navbar" (click)="goDescription()">
+      Opis
+    </button>
+    <button class="button button__navbar" (click)="goBack()">Powrót</button>
+  </div>
+</section>

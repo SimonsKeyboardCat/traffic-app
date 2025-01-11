@@ -1,0 +1,87 @@
+.transit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+    overflow: hidden;
+  }
+
+  &__button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 30px;
+    background: #4c5770;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    &--big {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 80px;
+    }
+
+    &--medium {
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      width: 80px;
+    }
+
+    &--small {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+  }
+
+  &__title {
+    font-size: 19px;
+    width: 200px;
+  }
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

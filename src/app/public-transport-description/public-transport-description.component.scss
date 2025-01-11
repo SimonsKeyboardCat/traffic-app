@@ -1,0 +1,71 @@
+.car-transport-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 210px;
+    width: 300px;
+    overflow: hidden;
+    background: #4c5770;
+    border-radius: 30px;
+    padding: 20px;
+
+    &--title {
+      align-self: flex-start;
+    }
+  }
+
+  &__list {
+    &--item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
