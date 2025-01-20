@@ -2,6 +2,26 @@
   <h1>KOMUNIKACJA MIEJSKA</h1>
 
   <div class="transit__wrapper">
+    <div class="transit__card" (click)="goToRoutePlanning()">
+      <div class="transit__button">
+        <img
+          class="transit__icon--medium"
+          src="../../assets/icons/zoom.png"
+          alt="Search"
+        />
+      </div>
+      <h4 class="transit__title">Zaplanuj trasę</h4>
+    </div>
+    <div class="transit__card">
+      <div class="transit__button">
+        <img
+          class="transit__icon--medium"
+          src="../../assets/icons/calendar.png"
+          alt="Search"
+        />
+      </div>
+      <h4 class="transit__title">Rozkład jazdy</h4>
+    </div>
     <div class="transit__card">
       <div class="transit__button">
         <img
@@ -12,7 +32,7 @@
       </div>
       <h4 class="transit__title">Warunki atmosferyczne</h4>
     </div>
-    <div class="transit__card">
+    <div class="transit__card" (click)="goToTickets()">
       <div class="transit__button">
         <img
           class="transit__icon--small"

@@ -1,0 +1,96 @@
+.add-passengers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+
+    overflow-y: auto;
+    padding-bottom: 100px;
+  }
+
+  &__card {
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    background: #363e51;
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__data > div {
+    font-size: 0.8rem;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__button > * {
+    font-size: 0.8rem;
+  }
+
+  &__icon {
+    background-color: #6d89bd;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

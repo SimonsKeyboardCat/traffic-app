@@ -1,0 +1,122 @@
+<section class="tickets">
+  <h1>Bilety</h1>
+
+  <div class="tickets__wrapper">
+    <div class="tickets__switch">
+      <button
+        class="button button__switch green"
+        (click)="showTickets('ulgowy')"
+      >
+        Ulgowy
+      </button>
+      <button
+        class="button button__switch yellow"
+        (click)="showTickets('normalny')"
+      >
+        Normalny
+      </button>
+    </div>
+
+    <h2>Minutowe:</h2>
+    <div *ngIf="!tickets" class="tickets__min">
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__big green">20</div>
+        <p>minut</p>
+        <p>1,70zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__big green">75</div>
+        <p>minut</p>
+        <p>2,20zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__big green">90</div>
+        <p>minut</p>
+        <p>3,50zł</p>
+      </div>
+    </div>
+
+    <div *ngIf="tickets" class="tickets__min">
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__big yellow">20</div>
+        <p>minut</p>
+        <p>3,70zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__big yellow">75</div>
+        <p>minut</p>
+        <p>4,20zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__big yellow">90</div>
+        <p>minut</p>
+        <p>8,50zł</p>
+      </div>
+    </div>
+
+    <h2>Okresowe:</h2>
+    <div *ngIf="!tickets" class="tickets__min">
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__small green">Dobowy</div>
+        <p>minut</p>
+        <p>13,00zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__small green">Weekendowy</div>
+        <p>minut</p>
+        <p>12,00zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__small green">3 dniowy</div>
+        <p>minut</p>
+        <p>28,50zł</p>
+      </div>
+    </div>
+
+    <div *ngIf="tickets" class="tickets__min">
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__small yellow">Dobowy</div>
+        <p>minut</p>
+        <p>23,00zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__small yellow">Weekendowy</div>
+        <p>minut</p>
+        <p>22,00zł</p>
+      </div>
+      <div class="tickets__card">
+        <p>ZTM Warszawa</p>
+        <p>Strefa 1+2</p>
+        <div class="tickets__small yellow">3 dniowy</div>
+        <p>minut</p>
+        <p>58,50zł</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="button button__navbar" (click)="goBack()">Powrót</button>
+  </div>
+</section>

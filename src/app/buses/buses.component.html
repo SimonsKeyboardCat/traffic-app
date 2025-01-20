@@ -1,0 +1,156 @@
+<section class="buses">
+  <h1>Zaplanuj trasę</h1>
+
+  <div class="buses__wrapper">
+    <div class="buses__header">
+      <div class="buses__container">
+        <div class="buses__label">Dokąd jedziemy?</div>
+        <input
+          class="buses__input"
+          [(value)]="adress"
+          type="text"
+          placeholder="Wpisz adres"
+        />
+      </div>
+    </div>
+
+    <h2>Odjazdy</h2>
+    <div class="buses__container2">
+      <div class="buses__card">
+        <div class="buses__info">
+          <div>
+            <div>Odjazd za:</div>
+            <div class="buses__value green">5 min</div>
+          </div>
+          <div>
+            <img src="../../assets/icons/walk.png" alt="" />
+            <div class="buses__small">4 min</div>
+          </div>
+          <div class="buses__green">9:45</div>
+          <div>
+            <img src="../../assets/icons/bus.png" alt="" />
+            <div class="buses__small">nr 134</div>
+          </div>
+          <div class="buses__blue">10:09</div>
+          <div>
+            <img src="../../assets/icons/walk.png" alt="" />
+            <div class="buses__small">2 min</div>
+          </div>
+          <div class="green">30 min</div>
+        </div>
+
+        <div class="buses__buttons">
+          <div class="buses__button" (click)="goToTickets()">
+            <img
+              class="buses__icon"
+              src="../../assets/icons/tickets-small.png"
+              alt=""
+            />
+            <div>Bilety</div>
+          </div>
+          <div class="buses__button" (click)="goToLocalization()">
+            <img
+              class="buses__icon"
+              src="../../assets/icons/trains-small.png"
+              alt=""
+            />
+            <div>Sprawdź lokalizację</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buses__card">
+        <div class="buses__info">
+          <div>
+            <div>Odjazd za:</div>
+            <div class="buses__value green">6 min</div>
+          </div>
+          <div>
+            <img src="../../assets/icons/walk.png" alt="" />
+            <div class="buses__small">6 min</div>
+          </div>
+          <div class="buses__green">9:45</div>
+          <div>
+            <img src="../../assets/icons/tram-small.png" alt="" />
+            <div class="buses__small">nr 171</div>
+          </div>
+          <div class="buses__blue">10:09</div>
+          <div>
+            <img src="../../assets/icons/walk.png" alt="" />
+            <div class="buses__small">4 min</div>
+          </div>
+          <div class="green">30 min</div>
+        </div>
+
+        <div class="buses__buttons">
+          <div class="buses__button" (click)="goToTickets()">
+            <img
+              class="buses__icon"
+              src="../../assets/icons/tickets-small.png"
+              alt=""
+            />
+            <div>Bilety</div>
+          </div>
+          <div class="buses__button" (click)="goToLocalization()">
+            <img
+              class="buses__icon"
+              src="../../assets/icons/trains-small.png"
+              alt=""
+            />
+            <div>Sprawdź lokalizację</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buses__card">
+        <div class="buses__info">
+          <div>
+            <div>Odjazd za:</div>
+            <div class="buses__value red">10 min</div>
+          </div>
+          <div>
+            <img src="../../assets/icons/walk.png" alt="" />
+            <div class="buses__small">6 min</div>
+          </div>
+          <div class="buses__red">9:51</div>
+          <div>
+            <img src="../../assets/icons/bus.png" alt="" />
+            <div class="buses__small">nr 521</div>
+          </div>
+          <div class="buses__red">10:21</div>
+          <div>
+            <img src="../../assets/icons/walk.png" alt="" />
+            <div class="buses__small">2 min</div>
+          </div>
+          <div>
+            <div class="red">36 min</div>
+            <div class="red buses__small">Opóźniony</div>
+          </div>
+        </div>
+
+        <div class="buses__buttons">
+          <div class="buses__button" (click)="goToTickets()">
+            <img
+              class="buses__icon"
+              src="../../assets/icons/tickets-small.png"
+              alt=""
+            />
+            <div>Bilety</div>
+          </div>
+          <div class="buses__button" (click)="goToLocalization()">
+            <img
+              class="buses__icon"
+              src="../../assets/icons/trains-small.png"
+              alt=""
+            />
+            <div>Sprawdź lokalizację</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="button button__navbar" (click)="goBack()">Powrót</button>
+  </div>
+</section>

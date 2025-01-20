@@ -14,4 +14,12 @@ export class TransitComponent {
   goBack() {
     this.router.navigate(['/public-transport']);
   }
+
+  goToRoutePlanning() {
+    this.router.navigate(['/route-planning-bus']);
+  }
+
+  goToTickets() {
+    this.router.navigate(['/tickets']);
+  }
 }

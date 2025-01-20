@@ -1,0 +1,164 @@
+.buses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__label {
+    color: white;
+  }
+
+  &__input {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background: #28303f;
+    color: white;
+    border: none;
+  }
+
+  &__card {
+    width: 380px;
+    background: #4c5770;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 7px;
+  }
+
+  &__value {
+    font-size: 1.5rem;
+  }
+
+  &__small {
+    font-size: 0.7rem;
+  }
+
+  &__green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #249d40;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 30px;
+    height: 20px;
+  }
+
+  &__blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #144baf;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 30px;
+    height: 20px;
+  }
+
+  &__red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa0000;
+    color: white;
+    padding: 5px 7px;
+    border-radius: 30px;
+    height: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__icon {
+    background-color: #6d89bd;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  color: #249d40;
+}
+
+.red {
+  color: #fa0000;
+}

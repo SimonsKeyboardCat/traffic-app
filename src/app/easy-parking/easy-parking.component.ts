@@ -14,4 +14,8 @@ export class EasyParkingComponent {
   goBack() {
     this.router.navigate(['/car']);
   }
+
+  goToParkingAvailability() {
+    this.router.navigate(['/parking-availability']);
+  }
 }

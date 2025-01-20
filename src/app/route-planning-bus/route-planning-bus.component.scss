@@ -1,0 +1,152 @@
+.route-planning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__label {
+    color: white;
+  }
+
+  &__input {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background: #28303f;
+    color: white;
+    border: none;
+  }
+
+  &__text {
+    color: white;
+    background: #4c5770;
+    padding: 10px;
+    border-radius: 50px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    background: #4c5770;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  &__title {
+    color: white;
+    padding: 20px 20px 0 20px;
+  }
+
+  &__buttons {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__buttons2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #6d89bd;
+    padding: 5px;
+    border-radius: 50px;
+
+    &:hover {
+      background: #3b6bc5;
+    }
+  }
+
+  &__button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #414a60;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__green {
+    color: #7ef22b;
+  }
+
+  &__red {
+    color: #fa0000;
+  }
+
+  &__confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

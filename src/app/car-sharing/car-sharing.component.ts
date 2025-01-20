@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 export class CarSharingComponent {
   constructor(private router: Router) {}
 
+  goRoutePlanning() {
+    this.router.navigate(['/route-planning']);
+  }
+
   goBack() {
     this.router.navigate(['/car']);
   }

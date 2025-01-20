@@ -1,0 +1,56 @@
+<section class="route-planning">
+  <h1>Zaplanuj trasę</h1>
+
+  <div class="route-planning__wrapper">
+    <div class="route-planning__header">
+      <div class="route-planning__container">
+        <div class="route-planning__label">Skąd jedziemy?</div>
+        <input
+          class="route-planning__input"
+          type="text"
+          placeholder="Wpisz adres"
+        />
+      </div>
+      <div class="route-planning__container">
+        <div class="route-planning__label">Dokąd jedziemy?</div>
+        <input
+          class="route-planning__input"
+          type="text"
+          [(ngModel)]="adress"
+          placeholder="Wpisz adres"
+        />
+      </div>
+      <div class="route-planning__container2">
+        <div class="route-planning__text">
+          {{ now.getHours() }} : {{ now.getMinutes() }}
+        </div>
+        <div class="route-planning__text">Opcje</div>
+      </div>
+    </div>
+
+    <div class="route-planning__body">
+      <div class="route-planning__title">Zapisane adresy:</div>
+      <div class="route-planning__buttons">
+        <div class="route-planning__button">Dom</div>
+        <div class="route-planning__button">Praca</div>
+        <div class="route-planning__button">Uczelnia</div>
+        <div class="route-planning__button">Galeria handlowa</div>
+      </div>
+    </div>
+
+    <div class="route-planning__confirm">
+      <div class="route-planning__title">Szukaj trasy</div>
+      <div class="route-planning__button2" (click)="goBuses()">
+        <img
+          class="route-planning__icon--small"
+          src="../../assets/icons/arrow-right.png"
+          alt="Search"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <button class="button button__navbar" (click)="goBack()">Powrót</button>
+  </div>
+</section>

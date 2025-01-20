@@ -1,0 +1,98 @@
+.tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__switch {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__min {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__card {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #363e51;
+    padding: 10px 15px;
+    border-radius: 30px;
+    gap: 2px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  &__card > p {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  &__big {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  &__small {
+    font-size: 1rem;
+    line-height: 4rem;
+  }
+}
+
+.navbar {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  background: #353f54;
+  border-radius: 20px 20px 0 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.button__navbar {
+  width: 127px;
+  height: 43px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  background: #28303f;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__switch {
+  width: 127px;
+  height: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 500px;
+  background: #363e51;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  color: #25813a;
+}
+
+.yellow {
+  color: #bcbc17;
+}
